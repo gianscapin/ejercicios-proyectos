@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <script>
+        name = prompt('Ingrese su nombre: ');
+        console.log('Hola ' + name + '!');
+        age = prompt('Cuál es tu edad ' + name + '?');
+        const AGE_LIMIT = 18;
+
+        if (age >= AGE_LIMIT) {
+            alert('Bienvenido!');
+        } else {
+            alert('No puedes ingresar.');
+        }
+
+        movie = 'spiderman';
+        point = 0;
+        movieAnswer = prompt('Cómo se llama la película donde el protagonista es picado por una araña?')
+        movieRequested = movieAnswer.toLowerCase();
+        if (movieRequested === movie) {
+            alert('Correcta!');
+            point++;
+        } else {
+            alert('Incorrecta.');
+        }
+        yearMovie = 2002;
+        yearAnswer = prompt('En qué año se estrenó la película?');
+
+        if (yearAnswer == yearMovie) {
+            alert('Correcta!');
+            point++;
+        } else {
+            alert('Incorrecta.');
+        }
+
+        alert('Tus puntos son: ' + point + '!');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
